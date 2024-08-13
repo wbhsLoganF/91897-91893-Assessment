@@ -1,0 +1,12 @@
+body{
+    font-family: "Arial", sans-serif;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    color: #000;
+}
+
+#page_container{
+    width: 1800px;
+    margin: 0 auto;
+    padding: 20px;
+}
