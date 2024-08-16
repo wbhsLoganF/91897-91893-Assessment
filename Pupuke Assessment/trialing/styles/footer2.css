@@ -6,7 +6,60 @@ body{
 }
 
 #page_container{
-    width: 1800px;
+    width: 1500px;
     margin: 0 auto;
     padding: 20px;
 }
+
+footer{
+    background-color: #B9DAE1;
+    width: 1500px;
+    margin-top: 600px;
+}
+
+footer ul{
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+}
+
+footer li{
+    display: inline-block;
+}
+
+footer li a{
+    background-color: #B9DAE1;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    color: #000;
+    padding: 60px 50px;
+    width:395px;
+    clear:both;
+}
+
+footer li a:hover{
+    text-decoration: bold;
+    color: black;
+    background-color: #A9FFCB;
+    opacity: 0.7;
+    transition: 0.4s;
+}
+
+#link2{
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+}
+
+#big_L{
+    font-size: 15px;
+    float: left;
+    width: 1500px;
+    height: 40px;
+    border: none;
+    border-top: 3px solid #fff;
+    background-color: #B9DAE1;
+
+}
+
