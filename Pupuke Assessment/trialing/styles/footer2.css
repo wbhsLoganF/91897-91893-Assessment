@@ -15,6 +15,7 @@ footer{
     background-color: #B9DAE1;
     width: 1500px;
     margin-top: 600px;
+
 }
 
 footer ul{
@@ -39,18 +40,6 @@ footer li a{
     clear:both;
 }
 
-footer li a:hover{
-    text-decoration: bold;
-    color: black;
-    background-color: #A9FFCB;
-    opacity: 0.7;
-    transition: 0.4s;
-}
-
-#link2{
-    border-left: 3px solid #fff;
-    border-right: 3px solid #fff;
-}
 
 #big_L{
     font-size: 15px;
@@ -58,8 +47,25 @@ footer li a:hover{
     width: 1500px;
     height: 40px;
     border: none;
-    border-top: 3px solid #fff;
     background-color: #B9DAE1;
+    text-decoration: none;
+}
 
+#big_L a{
+    text-decoration: none;
+    color: #000;
+}
+
+#footer a:hover{
+    color: #fff;
+    transition: 0s;
+}
+
+#footer{
+    background-color: #B9DAE1;
+    margin-bottom: 0;
+    width: 1500px;
+    height: 300px;
+    margin-left: 0;
 }
 
