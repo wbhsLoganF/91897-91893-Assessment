@@ -5,6 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+            
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+                }
+            }
+            }
+        }
+    </script>
     <title>Te Kāhui o Pupuke - Home</title>
 </head>
 <body>
@@ -74,17 +95,29 @@
 
         <div id="vision_txt">
             <p id="vtp1">To create a rich, collaborative culture that unites kura (schools), pouako (teachers), ākonga (students) and whānau to work collectively on common goals for the benefit of all. </p>
-            <p id="vtp2">‘Ehara taku toa i te toa takitahi, engari he toa takitini' - success is not the work of an individual, but the work of many.</p>
+            <p id="vtp2">‘Ehara taku toa i t    e toa takitahi, engari he toa takitini' - success is not the work of an individual, but the work of many.</p>
         </div>
         
         <footer>
             <ul>
-                <li id="link1f"><a href="####">Sources ▼</a></li>
-                <li id="link2f"><a href="https://www.tekaahuiakoopupuke.co.nz/" target="_blank">Pupuke Kāhui Ako</a></li>
-                <li><a href="####">Get in touch  ▼</a></li>
-                <button id="big_L"><a href="https://www.wikipedia.org/" target="_blank">Content sourced from Wikipedia</a></button>
+                <li id="link1f">
+                    <div>
+                        <a onclick="myFunction()" class="dropbtn">Sources ▼</a>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a id="dropdown_link1" href="https://phys.org/news/2019-06-firepits-gods-ancient-memories-maar.html ">Lake Pupuke</a>
+                            <a href="https://www.ngatipaoaiwi.co.nz/history.html ">Ngati Paoa</a>
+                            <a href="https://en.wikipedia.org/wiki/Waitemat%C4%81_Harbour">Waitemata Harbour</a>
+                            <a href="https://en.wikipedia.org/wiki/Rangitoto_Island">Rangitoto</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="link2f"><a href="####">Pupuke Kāhui Ako</a></li>
+                <li id="link3f"><a href="gallery.html">Gallery</a>
+
+                <button id="big_L"><a href="####">Content sourced from Wikipedia</a></button>
             </ul>
         </footer>
+        
     </div>
 </body>
 </html> 
