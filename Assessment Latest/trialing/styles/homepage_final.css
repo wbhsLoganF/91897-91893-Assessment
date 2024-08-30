@@ -1,0 +1,159 @@
+body{
+    font-family: "Arial", sans-serif;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    color: #000;
+}
+
+#page_container{
+    width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.bar{
+    margin: 0;
+    width:1400px;
+    height: 30px;
+    background-color: #66AAB7;
+    float: left;  
+    margin-left:40px;
+}
+
+#intro_back{
+    background: black url("images/rangitoto_island/rangi.jpg") no-repeat center;
+    float: left;
+    width:1400px;
+    height: 680px;
+    margin: 0px;
+    margin-left:40px;
+    box-shadow: 0 0 48px 16px rgba(0,0,0,0.175);
+}
+
+#intro_text1{
+    font-size: 80px;
+    color: white;
+    text-align:center;
+    margin-top: 60px;
+    margin-bottom: 200px;    
+    text-shadow: 1px 1px 3px #000000;
+}
+
+#intro_text2{
+    font-size: 80px;
+    color: white;
+    text-align:center;
+    padding: 20px 0;
+    width:1396px;
+    border: 2px solid #fff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#waiata_title{
+
+    float: left;
+    width: 1373px;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.subheading{
+    font-size: 50px;
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+#credit{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#maori p{
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-left: -40px;
+    font-size: 27px;
+    text-align: center;
+}
+
+#maori{
+    float:left;
+}
+
+#english{
+    float:left;
+    margin-top:500px;
+    margin-left: -260px;
+    margin-bottom: 50px;
+}
+
+#english p{
+    margin-bottom: 10px;
+    font-size: 24px;
+    margin-left: -75px;
+    text-align: center;
+}
+
+.decoration{ 
+    float:left;
+    margin-left: 40px;
+    height: 1200px;
+    margin-top: -232px;
+    margin-bottom: 10px;
+}
+
+#waiata{
+    margin-left: 595px;
+}
+
+#dec2{
+    float: left;
+    margin-left: 165px;
+    border: none;
+
+}
+
+#our_vision{
+    border: 5px solid #66AAB7;
+    border-left: none;
+    border-right: none;
+    padding-top: 20px 10px;
+    padding-bottom: 50px;
+    width: 1380px;
+    float: left;
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#wharf{
+    margin: 0;
+    margin-left: 40px;
+    width: 1400px;
+    height: 400px;
+    padding:0;
+}
+
+#short{
+    margin-top: -4px;
+}
+
+#vision_txt p{
+    margin-bottom: 0;
+    float: left;
+    width: 900px;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+#vtp{
+    margin-left: 140px;
+    margin-right: 0;
+    padding-left: 170px;
+    padding-top: 30px;
+    margin-top: 0;
+
+}

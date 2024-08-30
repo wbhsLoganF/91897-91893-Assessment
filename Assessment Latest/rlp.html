@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+            
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+                }
+            }
+            }
+        }
+    </script>
+    <title>Rangitoto Island & Lake Pupuke</title>
+</head>
+<body>
+    <div id="page_container">
+
+        <header>
+            <div id="heada">
+                <a href="index.html">
+                    <img id="logo" src="images/logo.jpg" alt="Te Kāhui o Pupuke logo">
+                </a>
+                <div id="title">
+                    <h1>Te Kāhui o Pupuke</h1>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a id="link1" href="rlp.html">Rangitoto & Lake Pupuke</a></li>
+                <li><a id="link2" href="index.html">Home</a></li>
+                <li><a href="npwh.html">  Ngāti paoa & Waitematā Harbour</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div id="top_heading">
+                <h2 class="subheading">Rangitoto</h2>
+            </div>
+            <div class="gallery">
+                <img class="img" src="images/rangitoto_island/Rangitoto_Island_banner.jpg" alt="rangitoto_island">
+                <img class="img2" src="images/rangitoto_island/rangitoto-volcano-nz.jpg" alt="rangitoto_island">
+                <img class="img2" src="images/rangitoto_island/Rangitoto_(1395366679).jpg" alt="rangitoto_island">
+            </div>
+            <section id="content_rangi">
+                <h2 class="subheading" id="overview_rangi">Overview</h2>
+                <p class="p">Rangitoto Island is a volcanic island in the Hauraki Gulf. The 5.5 km (3.4 mi) wide island is a symmetrical shield volcano cone, reaching a height of 260 m (850 ft). It is separated from the mainland of Auckland's North Shore by the Rangitoto Channel.The volcano erupted within the historical memory of the local Māori iwi (tribes). Human footprints have been found between layers of Rangitoto volcanic ash on the adjoining Motutapu Island.Ngāi Tai was the iwi living on Motutapu, and considers both islands their ancestral home. Ngāti Paoa also has links with Rangitoto.</p>
+                <p class="p">Since World War II, it has been linked by a causeway to the much older, non-volcanic Motutapu Island. Rangitoto is Māori for 'Bloody Sky', with the name coming from the full phrase Ngā Rangi-i-totongia-a Tama-te-kapua ("The days of the bleeding of Tama-te-kapua").</p>
+                <h2 class="subheading" id="geology_rangi">Geology</h2>
+                <p class="p">Rangitoto was formed during a single phase of eruptions that may have lasted only 5–10 years, about 600 years ago. Previous inferences that it was formed by a series of eruptions been disproved by the most recent research.</p>
+                <p class="p">Lava tubes are formed when low-viscosity molten lava known as pahoehoe flows and cools on the outside due to contact with the ground and air, to form a hard crust allowing the still-liquid molten lava to continue to flow through inside. </p>
+                <p class="p">At Rangitoto the large tubes are cave-like. A torch is needed to explore the caves. The longest known cave is about 50 m long. Subsidence back down the throat during the cooling process has left a moat-like ring around the crater summit, which may be viewed from a path which goes right round the rim and up to the highest point.. </p>
+                <p class="p"> In some parts of the island, fields of clinker-like black lava stones are exposed, appearing very recent to a casual eye. While it is possible that Rangitoto buried one or more smaller volcanoes, to date there is no strong evidence to support this idea. </p>
+            </section>
+            
+            <div id="top_heading_pupuke">
+                <h2 class="subheading" id="lp_title">Lake Pupuke</h2>
+            </div>
+            <div class="gallery">
+                <img class="img" src="images/edited_images/long_lake.png" alt="lake pupuke">
+                <img class="img2" src="images/lake_pupuke/4628687442_f3368549ac_k.jpg" alt="lake pupuke">
+                <img class="img2" src="images/lake_pupuke/4403095001_1e47703d48_o.jpg" alt="lake pupuke">
+            </div>
+            <section id="content_pupuke">
+                <h2 class="subheading" id="overview_pupuke">Overview</h2>
+                <p class="p">Traditionally known in Māori as Pupukemoana is a heart-shaped freshwater lake occupying a volcanic crater (or maar) situated to the east of Westlake Boys High School. The heart shape is a result of its formation by the linking of two circular craters - a larger one forming most of the lake and a smaller one forming the arm in the northeast. Separated from the sea by less than 200 m at one point, it has a circumference of about 4.5 km and reaches 57m in depth. It is popular for recreational activities and the lake front property around it. </p>
+                <h2 class="subheading" id="geology_pupuke">Geology</h2>
+                <p class="p">Rangitoto was formed during a single phase of eruptions that may have lasted only 5–10 years, about 600 years ago. Previous inferences that it was formed by a series of eruptions been disproved by the most recent research.</p>
+                <p class="p">Lava tubes are formed when low-viscosity molten lava known as pahoehoe flows and cools on the outside due to contact with the ground and air, to form a hard crust allowing the still-liquid molten lava to continue to flow through inside. </p>
+                <p class="p">At Rangitoto the large tubes are cave-like. A torch is needed to explore the caves. The longest known cave is about 50 m long. Subsidence back down the throat during the cooling process has left a moat-like ring around the crater summit, which may be viewed from a path which goes right round the rim and up to the highest point.. </p>
+                <p class="p"> In some parts of the island, fields of clinker-like black lava stones are exposed, appearing very recent to a casual eye. While it is possible that Rangitoto buried one or more smaller volcanoes, to date there is no strong evidence to support this idea. </p>
+                <div id="maori_legend_div">
+                    <h2 class="subheading" id="maori_legend">Māori Legend</h2>
+                    <p class="p">A traditional Māori legend surrounding the lake tells of a tupua couple, children of the fire gods. After quarreling and cursing Mahuika, the fire-goddess, their home on the mainland was destroyed by Matahoe, god of earthquakes and eruptions, on Mahuika's behalf. Lake Pupuke resulted from the destruction, while Rangitoto Island rose from the sea as their exile. The mists surrounding Rangitoto at certain times are considered the tears of the tupua couple for their former home.                </p>
+                    <img id="old_lake" src="images/lake_pupuke/lake_Takapuna_1930.webp" alt="">
+                </div>
+                    <h2 class="subheading" id="human_use">Human Use</h2>
+                <p class="p">Close to the Takapuna city centre, the lake is popular not only with wild birds (such as shags) but with picnickers, paddlers, kayakers, rowers, yachtsmen, divers, and windsurfers (lessons have been given on the lake). Free divers (no tanks) have practiced in the lake. College rowing crews use it. There have been boating races. and the Pupuke Boating Club operates there. Takapuna Boating Club hosts regattas. </p>
+    
+            </section>
+            <footer>
+                <ul>
+                    <li id="link1f">
+                        <div>
+                            <a onclick="myFunction()" class="dropbtn">Sources ▼</a>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a id="dropdown_link1" href= "https://en.wikipedia.org/wiki/Lake_Pupuke" target="_blank">Lake Pupuke ↗</a>
+                                <a href="https://en.wikipedia.org/wiki/Ngāti_Pāoa" target="_blank">Ngati Paoa ↗</a>
+                                <a href="https://en.wikipedia.org/wiki/Waitemat%C4%81_Harbour" target="_blank">Waitemata Harbour ↗</a>
+                                <a href="https://en.wikipedia.org/wiki/Rangitoto_Island" target="_blank" >Rangitoto ↗</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="link2f"><a href="https://www.tekaahuiakoopupuke.co.nz" target="_blank">Pupuke Kāhui Ako ↗</a></li>
+                    <li><a href="https://www.tekaahuiakoopupuke.co.nz/who-we-are/our-leaders/across-school-leads" target="_blank">Who we are ↗</a><li>
+                    <li id="big_L"><a>Content sourced from Wikipedia ©</a></li>
+                </ul>
+            </footer>
+        </section>
+    </div>
+</body>
+</html> 

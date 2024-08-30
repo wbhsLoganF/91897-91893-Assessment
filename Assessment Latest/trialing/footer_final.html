@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/footer_final.css">
+    <script>
+        // Toggle the visibility of the dropdown menu when the button is clicked
+        function myFunction() {
+            var dropdown = document.getElementById("myDropdown");
+            dropdown.classList.toggle("show");
+        }
+    
+        // Close the dropdown menu if the user clicks anywhere outside of it
+        window.addEventListener('click', function(event) {
+            if (!event.target.closest('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        });
+    </script>
+    <title>Final Footer</title>
+</head>
+<body>
+    <div id="page_container">
+        <footer>
+            <ul>
+                <li id="link1f">
+                    <div>
+                        <a onclick="myFunction()" class="dropbtn">Sources ▼</a>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a id="dropdown_link1" href= "https://en.wikipedia.org/wiki/Lake_Pupuke" target="_blank">Lake Pupuke ↗</a>
+                            <a href="https://en.wikipedia.org/wiki/Ngāti_Pāoa" target="_blank">Ngati Paoa ↗</a>
+                            <a href="https://en.wikipedia.org/wiki/Waitemat%C4%81_Harbour" target="_blank">Waitemata Harbour ↗</a>
+                            <a href="https://en.wikipedia.org/wiki/Rangitoto_Island" target="_blank" >Rangitoto ↗</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="link2f"><a href="https://www.tekaahuiakoopupuke.co.nz" target="_blank">Pupuke Kāhui Ako ↗</a></li>
+                <li><a href="https://www.tekaahuiakoopupuke.co.nz/who-we-are/our-leaders/across-school-leads" target="_blank">Who we are ↗</a><li>
+                <li id="big_L"><a>Content sourced from Wikipedia ©</a></li>
+            </ul>
+        </footer>
+
+</div>
+</body>
+</html> 

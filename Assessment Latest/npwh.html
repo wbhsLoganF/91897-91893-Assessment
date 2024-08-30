@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+            
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+                }
+            }
+            }
+        }
+    </script>
+    <title>Ngāti Paoa & Waitemata Harbour</title>
+</head>
+<body>
+    <div id="page_container">
+
+        <header>
+            <div id="heada">
+                <a href="index.html">
+                    <img id="logo" src="images/logo.jpg" alt="Te Kāhui o Pupuke logo">
+                </a>
+                <div id="title">
+                    <h1>Te Kāhui o Pupuke</h1>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a id="link1" href="rlp.html">Rangitoto & Lake Pupuke</a></li>
+                <li><a id="link2" href="index.html">Home</a></li>
+                <li><a href="npwh.html">  Ngāti paoa & Waitematā Harbour</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div id="top_heading">
+                <h2 class="subheading">Ngāti Paoa</h2>
+            </div>
+            <section id="ngati">
+                <h2 class="subheading" id="overview_ngati">Overview</h2>
+                <p class="p">Ngāti Pāoa is a Māori iwi of the Hauraki region. Its traditional lands stretch from the western side of the Hauraki Plains to Auckland. They also settled on Hauraki Gulf islands such as Waiheke.  Ngāti Pāoa is one of five tribes of the Marutūāhu confederation, the others being Ngāti Maru, Ngāti Rongoū, Ngāti Tamaterā and Ngāti Whanaunga. </p>
+                <p class="p">The Marutūāhu tribes are all descended from Marutūāhu, a son of Hotunui, who is said to have arrived in New Zealand on the Tainui canoe. The Marutūāhu tribes are therefore part of the Tainui group of tribes. The Marutūāhu confederation is also part of the Hauraki collective of tribes.  </p>
+                <h2 class="subheading" id="history_ngati">Early History</h2>
+                <p class="p">Ngāti Pāoa is descended from Pāoa. According to a Hauraki tradition his father was Rongo-tiu-moe-whara of the East Coast iwi, Ngāti Kahungunu, born at Whai-a-pāoa near Wharekahika. </p>
+                <p class="p">According to Tainui accounts his father was Hekemaru, his paternal grandparents were Pikiao from the Te Arawa tribe, and Rereiao, a high-born Waikato woman descended from Whatihua. With whom she had sons, first Haora Tipa Koinaki and second Horowhenua. </p>
+                <p class="p">Pāoa and Tukutuku's children lived in and around the Hauraki Plains. Ngāti Pāoa later spread to the western side of the Firth of Thames, from where they also frequented the Hunua Ranges. By the 1700s they also frequented the Tāmaki (Auckland) isthmus, the North Shore and the eastern and northern Coromandel Peninsula.  </p>
+                <p class="p">In about 1780 Ngāti Pāoa established settlements along the western side of the Tamaki River and at Mokoia (present-day Panmure). In 1790 and from 1793 to 1798 they engaged in many battles with tribes to the north, at least as far as the Mahurangi district.</p>
+            </section>
+            
+            <div id="top_heading_waitemata">
+                <h2 class="subheading" id="wh_title">Waitemata Harbour</h2>
+            </div>
+            <div class="gallery">
+                <img class="img2" src="images/waitemata_harbour/1024px-Bench_overlooking_the_Waitemata_Harbour,_Auckland_-_0088.jpg" alt="lake pupuke">
+                <img class="img2" src="images/waitemata_harbour/1024px-Waitemata_Harbour-mouth_aerial.jpg" alt="lake pupuke">
+            </div>
+            <section id="content_waitemata">
+                <h2 class="subheading" id="etymology">Etymology</h2>
+                <p class="p">The harbour has long been the main anchorage and port area for the Auckland region. Taking the idea of the several Māori portage paths over the isthmus one step further, the creation of a canal that would link the Waitematā and Manukau harbours was considered in the early 1900s. However, no serious work (or land take) was undertaken. The act was repealed on 1 November 2010.  </p>
+                <p class="p"> In some parts of the island, fields of clinker-like black lava stones are exposed, appearing very recent to a casual eye. While it is possible that Rangitoto buried one or more smaller volcanoes, to date there is no strong evidence to support this idea. </p>
+               
+            </section>
+            <footer>
+                <ul>
+                    <li id="link1f">
+                        <div>
+                            <a onclick="myFunction()" class="dropbtn">Sources ▼</a>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a id="dropdown_link1" href= "https://en.wikipedia.org/wiki/Lake_Pupuke" target="_blank">Lake Pupuke ↗</a>
+                                <a href="https://en.wikipedia.org/wiki/Ngāti_Pāoa" target="_blank">Ngati Paoa ↗</a>
+                                <a href="https://en.wikipedia.org/wiki/Waitemat%C4%81_Harbour" target="_blank">Waitemata Harbour ↗</a>
+                                <a href="https://en.wikipedia.org/wiki/Rangitoto_Island" target="_blank" >Rangitoto ↗</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="link2f"><a href="https://www.tekaahuiakoopupuke.co.nz" target="_blank">Pupuke Kāhui Ako ↗</a></li>
+                    <li><a href="https://www.tekaahuiakoopupuke.co.nz/who-we-are/our-leaders/across-school-leads" target="_blank">Who we are ↗</a><li>
+                    <li id="big_L"><a>Content sourced from Wikipedia ©</a></li>
+                </ul>
+            </footer>
+        </section>
+    </div>
+</body>
+</html> 

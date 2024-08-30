@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/homepage2.css">
+    <script>
+        // Toggle the visibility of the dropdown menu when the button is clicked
+        function myFunction() {
+            var dropdown = document.getElementById("myDropdown");
+            dropdown.classList.toggle("show");
+        }
+    
+        // Close the dropdown menu if the user clicks anywhere outside of it
+        window.addEventListener('click', function(event) {
+            if (!event.target.closest('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        });
+    </script>
+    <title>Homepage 2</title>
+</head>
+<body>
+    <div id="page_container">
+
+        <div class="bar"></div>
+        <div id="intro_back">
+            <h2 id="intro_text1">Welcome to</h2>
+            <h2 id="intro_text2">Te Kāhui o Pupuke</h2>
+        </div> 
+        <div class="bar"></div>
+
+        <section id="content">
+            <div id="waiata_title">
+                <h2 class="subheading">Waiata - 'Rangitoto'</h2>
+                <h3 id="credit">nā Johnny Waititi</h3>
+            </div>
+
+            <img src="images/waiata_decoration.png" alt="" class="decoration">
+            <div id="waiata">
+                <div id="maori">
+                    <p>Rangitoto te maunga</p>
+                    <p>Waitematā te moana</p>
+                    <p>Ngāti Paoa te iwi e</p>
+                    <p>Ko Pupuke te roto</p>
+                    <p>Anei ngā kura o Te Kāhui Ako</p>
+                    <p>E ngā iwi, tēnā koutou</p>
+                    <p>E ngā iwi, tēnā koutou</p>
+                </div>
+                <div id="english">
+                    <p>English Translation:</p>
+                    <p>Rangitoto is the mountain</p>
+                    <p>Waitemata is the ocean</p>
+                    <p>Ngati Paoa are the iwi</p>
+                    <p>Pupuke is the lake</p>
+                    <p>Here are the schools of our</p>
+                    <p>Community of learning</p>
+                    <p>Everyone, welcome</p>
+                    <p>Everyone, welcome</p>
+                </div>
+            <img src="images/waiata_decoration.png" alt="" class="decoration" id="dec2">
+            </div>
+        </section>
+        
+        <section id="vision">
+            <div id="our_vision">
+                <h2 class="subheading" id="vision">Our Vision</h2>
+            </div>
+            <img src="images/edited_images/wharf_resized.jpg" alt="" id="wharf">
+        </section>
+
+        <div id="vision_txt">
+            <p id="vtp1">To create a rich, collaborative culture that unites kura (schools), pouako (teachers), ākonga (students) and whānau to work collectively on common goals for the benefit of all. </p>
+            <p id="vtp2">‘Ehara taku toa i t    e toa takitahi, engari he toa takitini' - success is not the work of an individual, but the work of many.</p>
+        </div>
+
+    </div>
+</body>
+</html> 
+
